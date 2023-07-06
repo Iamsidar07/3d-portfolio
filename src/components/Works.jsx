@@ -7,9 +7,9 @@ import { github, dot } from "../assets"
 import {projects} from "../constants"
 import { fadeIn,textVariant } from '../utils/motion';
 
-const ProjectCard=({index,name,description,tags,image,source_code_link,liveUrl})=>{
+const ProjectCard=({index,name,description,tags,image,sourceCodeUrl,liveUrl})=>{
   return (
-    <motion.div variants={fadeIn("up","spring",index*0.5,0.75)}>
+    <motion.div>
       <Tilt options={{
         max:45,
         scale:1,
@@ -20,10 +20,13 @@ const ProjectCard=({index,name,description,tags,image,source_code_link,liveUrl})
         <div className="w-full relative h-[230px]">
           <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl"/>
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-2">
-            <div onClick={()=>window.open(source_code_link)} className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-              <img src={github} alt='github' className='w-1/2 h-1/2 object-contain' />
-            </div>
-            <div onClick={()=>window.open(liveUrl)} className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+            {
+              sourceCodeUrl && <div onClick={() => window.open(sourceCodeUrl)} className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+                <img src={github} alt='github' className='w-1/2 h-1/2 object-contain' />
+              </div>
+            }
+            
+            <div onClick={()=>window.open(liveUrl)} className="bg-white shadow-md w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
               <img src={dot} alt='Live url' className='w-1/2 h-1/2 object-contain' />
             </div>
           </div>
@@ -45,12 +48,12 @@ const ProjectCard=({index,name,description,tags,image,source_code_link,liveUrl})
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div >
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
       <div  className="w-full">
-        <motion.p variants={fadeIn("","",0.1,1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        <motion.p  className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
 
         >
           Welcome to my project showcase! Here, you'll discover a collection of my diverse and impactful projects. From software development to artistic endeavors, each project reflects my passion, skills, and dedication. Join me on this journey of creativity, innovation, and positive change. Let's explore the possibilities together!

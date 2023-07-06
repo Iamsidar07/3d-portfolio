@@ -7,7 +7,24 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import dot from "./dot.png";
+import carsify from "./carsify.png";
+import nextgenvisions from "./nextgenvisions.png";
+import promptly from "./promptly.png";
+import drumkit from "./drumkit.png";
+import fightwithme from "./fightwithme.png";
+import invactClone from "./invact-clone.png";
+import jokeshub from "./jokeshub.png";
+import microsoftStore from "./microsoft-store.png";
+import Netflixyy from "./Netflixyy.png";
+import teslaClone from "./tesla.png";
+import simongame from "./simongame.png";
+import rockpaperscissor from "./rockpaperscissor.png";
+import amazon from "./amazon.png";
+import disney from "./disney.png";
+import netflixv3 from "./netflixv3.png";
+import nftapp from "./nftapp.png";
 import rogan from "./rogan.jpg";
+
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -62,5 +79,21 @@ export {
   jobit,
   tripguide,
   dot,
-  rogan
+  rogan,
+  carsify,
+  promptly,
+  nextgenvisions,
+  drumkit,
+  fightwithme,
+  invactClone,
+  jokeshub,
+  microsoftStore,
+  Netflixyy,
+  teslaClone,
+  simongame,
+  rockpaperscissor,
+  amazon,
+  disney,
+  nftapp,
+  netflixv3,
 };

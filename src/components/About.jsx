@@ -40,7 +40,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        About myself Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam est atque provident odio non tenetur voluptas dolorem voluptatum nobis animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore neque rem eligendi expedita provident eos.
+        Introducing Manoj Kumar, a passionate 20-year-old coder with a love for developing full-stack web apps. With a keen interest in programming, Manoj enjoys exploring different languages and platforms to create innovative and dynamic web applications. His dedication to continuous learning and problem-solving skills make him an exciting talent in the coding world.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {
