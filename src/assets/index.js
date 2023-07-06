@@ -15,7 +15,7 @@ import fightwithme from "./fightwithme.png";
 import invactClone from "./invact-clone.png";
 import jokeshub from "./jokeshub.png";
 import microsoftStore from "./microsoft-store.png";
-import Netflixyy from "./Netflixyy.png";
+import Netflixyy from "./netflixyy.png";
 import teslaClone from "./tesla.png";
 import simongame from "./simongame.png";
 import rockpaperscissor from "./rockpaperscissor.png";
